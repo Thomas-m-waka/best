@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+<style>
+    h2{
+        background-color: aquamarine;
+        color:green;
+        margin:0 auto;
+        padding:50px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+    }
+    input[type="int"]{
+       
+    padding:20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    margin-left:50px;
+    
+    }
+    #result{
+        
+        
+        color:rgb(25, 14, 26);
+        margin-left:20px;
+        padding:10px;
+        border-radius: 2px;
+        margin-bottom: 40px;
+
+
+    }
+    h3{
+       
+        color:blue;
+        margin-top:20px;
+        padding:20px;
+        display: flex;
+        
+    }
+    .add{
+        background-color:blue;
+        color:pink;
+        padding:12px;
+        border-radius:5px;
+        margin-left:20px;
+        margin-right:20px;
+        transition: 0.3s;
+    }
+    .sub{
+        background-color: blueviolet;
+        color:white;
+        border-radius:5px;
+        padding:10px;
+        margin-right:20px;
+        transition: 0.3s;
+    }
+    .all{
+        
+        color:aqua;
+        
+    }
+    .mul{
+        background-color: rgb(114, 233, 207);
+        color:rgb(15, 15, 15);
+        border-radius:5px;
+        padding:10px;
+        margin-right:20px;
+        transition: 0.3;
+    }
+    .div{
+        background-color: rgb(72, 66, 78);
+        color:white;
+        border-radius:5px;
+        padding:10px;
+        margin-right:20px;
+        transition:0.3s;
+    }
+   .div:hover,.mul:hover,.add:hover,.div:hover,.sub:hover{
+        background-color: green;
+        color:yellow;
+    }
+   
+   
+</style>
+  <body>
+<div class="all">
+    <h2>Simple  calculator   using   Javascript </h2>
+    <div class="form">
+        <input type="int" id="num1"  placeholder="Input your First Number ">
+        <input type="int" id="num2"  placeholder="Input your  Second   Number">
+  
+        <h3>Results = <span id="result"></span></h3>
+    </div>
+
+    <button class="add" onclick="add()">add</button>
+    <button class="sub" onclick ="subtract()">Subtract</button>
+    <button class="mul" onclick="multiply()">Multiply</button>
+    <button class="div" onclick="divide()">Devide</button></div>
+    <script>
+        function add(){
+            var num1=parseFloat(document.getElementById("num1").value);
+           var num2=parseFloat(document.getElementById("num2").value);
+           document.getElementById("result").textContent=num1+num2;
+
+        }
+        function multiply(){
+            var num1=parseFloat(document.getElementById("num1").value);
+           var num2=parseFloat(document.getElementById("num2").value);
+           document.getElementById("result").textContent=num1*num2;
+        }
+        function subtract(){
+            var num1=parseFloat(document.getElementById("num1").value);
+           var num2=parseFloat(document.getElementById("num2").value);
+           document.getElementById("result").textContent=num1-num2;
+        }
+        function divide(){
+            var num1=parseFloat(document.getElementById("num1").value);
+           var num2=parseFloat(document.getElementById("num2").value);
+           document.getElementById("result").textContent=num1/num2;
+        }
+    </script>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
